@@ -1,0 +1,20 @@
+{
+  "name": "remindex-2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.x"
+  },
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "axios": "^1.6.5",
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "scripts": {
+    "dev": "node playground.js",
+    "deploy": "cd infra && npm run cdk deploy LambdaStack && cd .."
+  }
+}
